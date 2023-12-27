@@ -47,6 +47,10 @@ const config = {
           editUrl:
             'https://github.com/andreipope/codestart',
         },
+        gtag: {
+          trackingID: 'G-WVBRBDNNXC',
+          anonymizeIP: true,
+        },
         blog: false,
         // blog: {
         //   showReadingTime: true,
