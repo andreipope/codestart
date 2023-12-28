@@ -75,5 +75,5 @@ A text editor is essential for writing and managing your code. Visual Studio Cod
     ```
 7. Press `Ctrl + S` on Windows or `Cmd + S` on macOS to save the file.
 8. Select the `Save` button.
-9. Open the integrated terminal in VS Code using `Ctrl+`` or `Cmd+``
+9. To open the integrated terminal at the bottom of the VS Code window, go to the menu bar at the top, select **Terminal** > **New Terminal**.
 10. In the terminal, type `python3 test.py` to run your Python code. If VS Code is correctly installed and configured with Python, you should see "Hello, world!" printed in the terminal.
