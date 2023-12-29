@@ -1,7 +1,6 @@
 ---
 sidebar_position: 3
 slug: /python/introduction/python-evolution
-description: A summary of Python's development over the years.
 ---
 
 # Python's Evolution

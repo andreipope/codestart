@@ -1,7 +1,6 @@
 ---
 sidebar_position: 2
 slug: /python/introduction/birth-of-python
-description: The story of Python.
 ---
 
 # The Birth of Python

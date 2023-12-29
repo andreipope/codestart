@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 slug: /python/simple-games/number-guessing/while-loops
 description: Understand and implement `while` loops.
 ---
 
-# Understand and implement while loops
+# While Loops
 
 A `while` loop in Python allows for repeated execution of a block of code as long as a specified condition is true. It's commonly used when the number of iterations is not known in advance.
 

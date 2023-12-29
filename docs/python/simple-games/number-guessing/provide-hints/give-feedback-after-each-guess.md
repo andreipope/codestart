@@ -1,5 +1,5 @@
 ---
-sidebar_position: 13
+sidebar_position: 3
 slug: /python/simple-games/number-guessing/give-feedback-after-each guess
 description: Give feedback after each guess.
 ---

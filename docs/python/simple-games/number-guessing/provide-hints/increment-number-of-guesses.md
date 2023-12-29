@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 1
 slug: /python/simple-games/number-guessing/increment-number-of-guesses
 description: Increment the number of guesses.
 ---

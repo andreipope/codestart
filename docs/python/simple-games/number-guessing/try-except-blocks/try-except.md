@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 slug: /python/simple-games/number-guessing/try-except
 description: Use Try-Except blocks to handle user input.
 ---

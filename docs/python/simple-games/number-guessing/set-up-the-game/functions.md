@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 slug: /python/simple-games/number-guessing/function
-description: Functions.
+description: Functions are like recipes in a magic cookbook, allowing you to execute reusable blocks of code with optional ingredients (parameters) and instructions (code block) to simplify and organize programming tasks.
 ---
 
 # Functions

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 2
 slug: /python/simple-games/number-guessing/read-standard-input
 description: Read from the standard input.
 ---

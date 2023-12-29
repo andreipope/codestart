@@ -1,5 +1,5 @@
 ---
-sidebar_position: 14
+sidebar_position: 2
 slug: /python/simple-games/number-guessing/understand-f-strings
 description: Understand F-Strings.
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 2
 slug: /python/simple-games/number-guessing/graceful-error-handling
 description: Graceful error handling of user inputs.
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 1
 slug: /python/simple-games/number-guessing/undestand-if-else-blocks
 description: Understand if-else blocks.
 ---

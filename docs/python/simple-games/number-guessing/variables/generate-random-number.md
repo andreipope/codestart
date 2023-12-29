@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 slug: /python/simple-games/number-guessing/generate-random-number
 description: Generate a random number.
 ---
@@ -13,7 +13,7 @@ In Python, you can generate random numbers using the `random` module, which you'
 ## Hands-On Coding
 
 1. Remove the `pass` statement from the `guess_number` function. It was a temporary placeholder that you'll now replace with actual code.
-2. Inside the `guess_number` function, creates a variable called `number_to_guess` and assign it a random integer between 1 and 100, inclusive by writint the following line of code:
+2. Inside the `guess_number` function, create a variable called `number_to_guess` and assign it a random integer between 1 and 100, inclusive by writint the following line of code:
    ```python
    number_to_guess = random.randint(1, 100)
    ```
