@@ -1,7 +1,6 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 slug: /python/simple-games/number-guessing/random-module
-description: Learn about the random modules.
 ---
 
 # The random Module

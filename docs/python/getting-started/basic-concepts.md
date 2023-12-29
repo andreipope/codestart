@@ -9,7 +9,7 @@ description: Variables, data types, and basic operations
 
 ## Variables
 
-Think of a variable as a labeled jar where you can store something. In programming, just like you might have a jar for cookies and a jar for sugar in the kitchen, you have variables to keep track of data like numbers, words, or lists of things. A variable in Python is created the moment you decide what you want to put in this jar and label it.
+Think of a variable as a labeled jar where you can store something. In programming, just like you might have a jar for cookies and a jar for sugar in the kitchen, you have variables to keep track of data like numbers, words, or lists of things.
 
 ### Create a Variable
 

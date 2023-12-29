@@ -1,7 +1,6 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 slug: /python/simple-games/number-guessing/function
-description: Functions are like recipes in a magic cookbook, allowing you to execute reusable blocks of code with optional ingredients (parameters) and instructions (code block) to simplify and organize programming tasks.
 ---
 
 # Functions
@@ -78,19 +77,24 @@ Note the following about this example:
 
 ## Hands-On Coding
 
-1. At the top of the `number-guessing.py` file, after the `import random` line, define your function by typing `def guess_number():`. This line declares a function named `guess_number`. Remember to end the `def` line with a colon `:`.
-2. For now, add a placeholder inside the function so that it's not empty. A common placeholder is the `pass` statement, which does nothing. Ensure you indent the `pass` statement. Indentation is crucial in Python to define the scope of the function. Your function should look similar to the following:
+1. Find the VS Code application on your computer. It's typically located in the Applications folder on macOS or in the Start menu on Windows.
+2. Double-click the VS Code application icon to open it.
+3. Once you have VS Code open, go to the menu bar at the top and select `File` > `New File`. 
+4. Press `Ctrl + S` on Windows or `Cmd + S` on macOS to save the file.
+5. In the save dialog, navigate to the directory where you want to save your file.
+6. Name your file `number-guessing.py`. Make sure to include the `.py` extension, which specifies that it's a Python file.
+7. Select the `Save` button.
+8. At the top of the `number-guessing.py` file, define your function by typing `def guess_number():`. This line declares a function named `guess_number`. Remember to end this line with a colon `:`.
+9. For now, add a placeholder inside the function so that it's not empty. A common placeholder is the `pass` statement, which does nothing. Ensure you indent the `pass` statement. Indentation is crucial in Python to define the scope of the function. Your function should look similar to the following:
+    ```python
+    def guess_number():
+      pass
+    ```
+10. Once the function is declared, you need to call it to execute the game logic. After the function definition, write a line to call the `guess_number` function. This should be at the root level of the file, not indented under any function. Your script should now look like this:
    ```python
-   def guess_number():
-       pass
-   ```
-3. Once the function is declared, you need to call (or invoke) it to execute the game logic. After the function definition, write a line to call the `guess_number` function. This should be at the root level of the file, not indented under any function. Your script should now look like this:
-   ```python
-   import random
-
-   def guess_number():
-       pass
+    def guess_number():
+      pass
 
    guess_number()
    ```
-4. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+11. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).

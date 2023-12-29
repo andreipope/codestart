@@ -1,7 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /python/simple-games/number-guessing/standard-modules
-description: Learn about standard modules.
 ---
 
 # Standard Modules
