@@ -43,16 +43,18 @@ Below are some of the commonly used functions in the `random` module:
 
 ## Hands-On Coding
 
-1. Find the VS Code application on your computer. It's typically located in the Applications folder on macOS or in the Start menu on Windows.
-2. Double-click the VS Code application icon to open it.
-3. Once you have VS Code open, go to the menu bar at the top and select `File` > `New File`. 
-4. Press `Ctrl + S` on Windows or `Cmd + S` on macOS to save the file.
-5. In the save dialog, navigate to the directory where you want to save your file.
-6. Name your file `number-guessing.py`. Make sure to include the `.py` extension, which specifies that it's a Python file.
-7. Select the `Save` button.
-8. In the open `number-guessing.py` file, import the `random` module by typing the following line at the top::
+1. At the top of the `number-guessing.py` file, above the the `def guess_number():` line, import the `random` module by typing the following line at the top:
 
     ```python copy
     import random
     ```
-9. Save the file again after typing by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+    Your script should now look like this:
+    ```python
+    import random
+
+    def guess_number():
+      pass
+
+    guess_number()
+    ```
+2. Save the file again after typing by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).

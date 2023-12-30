@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /python/simple-games/number-guessing/generate-random-number
 description: Generate a random number.
 ---

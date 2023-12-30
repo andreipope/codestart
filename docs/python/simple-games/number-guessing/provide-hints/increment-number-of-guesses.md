@@ -30,7 +30,7 @@ To track how many attempts the user takes to guess the right number, you must in
               print("Your guess must be between 1 and 100.")
           except ValueError:
             print("Please enter a valid number.")
-      number_of_guesses += 1
+        number_of_guesses += 1
 
     guess_number()
     ```

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 slug: /python/simple-games/number-guessing/understand-f-strings
 description: Understand F-Strings.
 ---
@@ -57,13 +57,13 @@ print(result)  # Output: The sum of 5 and 10 is 15.
               print("Your guess must be between 1 and 100.")
           except ValueError:
             print("Please enter a valid number.")
-      number_of_guesses += 1
-      if guess < number_to_guess:
-        print("Too low!")
-      elif guess > number_to_guess:
-        print("Too high!")
-      else:
-        print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
+        number_of_guesses += 1
+        if guess < number_to_guess:
+          print("Too low!")
+        elif guess > number_to_guess:
+          print("Too high!")
+        else:
+          print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
     
     guess_number()
     ```
