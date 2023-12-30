@@ -1,9 +1,7 @@
 ---
 sidebar_position: 1
-slug: /python/simple-games/number-guessing/generate-random-number
-description: Generate a random number.
+slug: /python/simple-games/number-guessing/intro-to-variables
 ---
-
 
 # Intro to Variables
 
