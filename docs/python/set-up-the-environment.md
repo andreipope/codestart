@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-slug: /python/getting-started/set-up-the-environment
+sidebar_position: 2
+slug: /python/set-up-the-environment
 description: Install Python and the VS Code text editor.
 ---
 
