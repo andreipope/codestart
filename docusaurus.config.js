@@ -75,7 +75,7 @@ const config = {
         // title: 'CodeStart',
         logo: {
           alt: 'CodoStart Logo',
-          src: 'img/logo.jpeg',
+          src: 'img/logo.png',
         },
         items: [
           // {
