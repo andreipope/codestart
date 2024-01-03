@@ -70,11 +70,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/codestart-banner.png',
       navbar: {
         // title: 'CodeStart',
         logo: {
-          alt: 'CodoStart Logo',
+          alt: 'CodeStart Logo',
           src: 'img/logo.png',
         },
         items: [
