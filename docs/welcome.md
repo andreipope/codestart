@@ -9,7 +9,13 @@ CodeStart is dedicated to transforming beginners into confident programmers. Our
 
 ## Our Features
 
-- **Step-by-Step Tutorials**: Our guides come with easy-to-follow, step-by-step instructions. We break down complex topics into bite-sized pieces, ensuring that you can progress at your own pace without feeling overwhelmed.
-- **Real-World Examples**: We believe in the power of practical learning. Each guide is enriched with real-world examples and projects, allowing you to see how the concepts you learn can be applied in actual development scenarios.
-- **Interactive Learning**: Learning by doing is the key to mastering development skills. Our interactive coding challenges and exercises provide hands-on experience and immediate feedback, helping you solidify your understanding and skills.
-- **Community and Support**: Join a vibrant community of fellow developers where you can ask questions, share insights, and collaborate on projects. Our dedicated support team is also here to assist you on your learning journey.
+- **Step-by-Step Tutorials**: Easy-to-follow guides break down complex topics into bite-sized pieces, allowing you to progress at your own pace without feeling overwhelmed.
+- **Real-World Examples**: Practical learning through real-world examples and projects lets you apply concepts in actual development scenarios.
+- **Interactive Learning**: Master development skills by doing. Our interactive coding challenges and exercises provide hands-on experience and immediate feedback to solidify your understanding and skills.
+- **Community and Support**: Join a vibrant community of fellow developers to ask questions, share insights, and collaborate on projects. Our dedicated support team is here to assist you on your learning journey.
+
+## Learning Paths
+
+At CodeStart, we are committed to expanding our range of educational offerings to encompass a variety of programming languages. Designed to guide you through the specific intricacies of a programming language, each course series, or "path," ensures a comprehensive understanding from the basics to advanced topics. Currently, we offer the "Python Path," and are actively working on developing additional paths. Stay tuned for more dynamic and robust learning paths! 
+
+- [Python Path](/python)

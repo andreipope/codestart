@@ -1,7 +1,6 @@
 ---
-sidebar_position: 3
+sidebar_position: 8
 slug: /python/simple-games/number-guessing/understand-f-strings
-description: Understand F-Strings.
 ---
 
 # Understand F-Strings
@@ -30,12 +29,7 @@ print(result)  # Output: The sum of 5 and 10 is 15.
 
 ## Hands-On Coding
 
-1. Place your cursor below the `print("Too high!")` line, after the inner loop that validates the input, and outdent the line. It should be on the same level as the `if` and `elif` blocks.
-2. Write the `else` statement for handling the scenario in which the users guesses the number:
-    ```python
-    else:
-    ```
-3. Under the else statement, indent and add call the `print` function passing it the `f"Congratulations! You guessed it right in {number_of_guesses} guesses!"`  f-string as a paramater statement to congratulate the user:
+1. Under the `else` statement, indent a new line and call the `print` function passing it the `f"Congratulations! You guessed it right in {number_of_guesses} guesses!"`  f-string as a paramater statement to congratulate the user:
     ```python
     print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
     ```
@@ -57,7 +51,7 @@ print(result)  # Output: The sum of 5 and 10 is 15.
               print("Your guess must be between 1 and 100.")
           except ValueError:
             print("Please enter a valid number.")
-        number_of_guesses += 1
+
         if guess < number_to_guess:
           print("Too low!")
         elif guess > number_to_guess:
@@ -67,4 +61,4 @@ print(result)  # Output: The sum of 5 and 10 is 15.
     
     guess_number()
     ```
-6. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+2. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).

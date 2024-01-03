@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 10
 slug: /python/simple-games/number-guessing/run-your-code
 description: Run your code.
 ---

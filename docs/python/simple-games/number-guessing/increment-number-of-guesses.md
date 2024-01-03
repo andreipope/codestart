@@ -1,12 +1,11 @@
 ---
-sidebar_position: 1
+sidebar_position: 9
 slug: /python/simple-games/number-guessing/increment-number-of-guesses
-description: Increment the number of guesses.
 ---
 
 # Increment the Number of Guesses
 
-To track how many attempts the user takes to guess the right number, you must increment the  `number_of_guesses` counter every time every time the user makes a guess (valid or invalid), and the program goes back to prompt for another guess.
+To track how many attempts the user takes to guess the right number, you must increment the  `number_of_guesses` counter every time the user makes a guess (valid or invalid), and the program goes back to prompt for another guess.
 
 ## Hands-On Coding
 
@@ -32,6 +31,13 @@ To track how many attempts the user takes to guess the right number, you must in
             print("Please enter a valid number.")
         number_of_guesses += 1
 
+        if guess < number_to_guess:
+          print("Too low!")
+        elif guess > number_to_guess:
+          print("Too high!")
+        else:
+          print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
+    
     guess_number()
     ```
 6. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
