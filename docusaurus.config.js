@@ -44,8 +44,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/andreipope/codestart',
+          // editUrl:
+          //   'https://github.com/andreipope/codestart',
         },
         gtag: {
           trackingID: 'G-WVBRBDNNXC',
@@ -72,11 +72,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'CodeStart',
-        // logo: {
-        //   alt: 'My Site Logo',
-        //   src: 'img/logo.svg',
-        // },
+        // title: 'CodeStart',
+        logo: {
+          alt: 'CodoStart Logo',
+          src: 'img/logo.jpeg',
+        },
         items: [
           // {
           //   type: 'docSidebar',
