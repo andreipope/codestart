@@ -149,6 +149,8 @@ const config = {
         apiKey: 'cbbe32dd1d61bb1807f25aae52ae6bee',
   
         indexName: 'codestart',
+
+        contextualSearch: false
       },
     }),
 };
