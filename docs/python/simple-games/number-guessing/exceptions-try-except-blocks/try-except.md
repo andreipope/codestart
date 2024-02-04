@@ -1,6 +1,35 @@
 ---
 sidebar_position: 2
 slug: /python/simple-games/number-guessing/try-except-blocks
+startingCode: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        guess = int(input("Guess a number between 1 and 100: "))
+
+  guess_number()
+answer: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        try:
+          int(input("Guess a number between 1 and 100: "))
+        except ValueError:
+          print("Please enter a valid number.")
+
+  guess_number()
+filename: number-guessing.py
+language: Python
 ---
 
 # Try-Except Blocks
@@ -28,37 +57,21 @@ This function raises a `ValueError` exception if the user enters an invalid inte
 
 ## Hands-On Coding
 
-1. Place your cursor below the `while True:` line in the `guess_number` function.
-2.Start the `try` block by typing the `try` keyword followed by a colon(`:`). Ensure you indent this line.
+1. Place your cursor below the `while True:` line in the `guess_number` function. Start the `try` block by typing the `try` keyword followed by a colon(`:`). Ensure you indent this line.
     ```python
     try:
     ```
-3. Move the `int(input("Guess a number between 1 and 100: "))` line inside of the `try` block, ensuring it's intended.
-4. On the next line, add an `except` block that catches an error named `ValueError`:
+2. Move the `int(input("Guess a number between 1 and 100: "))` line inside of the `try` block, ensuring it's intended. On the next line, add an `except` block that catches an error named `ValueError`:
     ```python
     except ValueError:
     ```
-5. Inside of the `except` block, on a new intedned line, call the `print` function, passing it "Please enter a valid number." as a parameter.
+3. Inside of the `except` block, on a new intended line, call the `print` function, passing it "Please enter a valid number." as a parameter.
     ```python
     print("Please enter a valid number.")
     ```
-    The `number-guessing.py` file should look like this:
-    ```python
-    import random
 
-    def guess_number():
-      number_to_guess = random.randint(1, 100)
-      guess = None
-      number_of_guesses = 0
-      while guess != number_to_guess:
-        while True:
-          try:
-            int(input("Guess a number between 1 and 100: "))
-          except ValueError:
-            print("Please enter a valid number.")
+---
 
-    guess_number()
-    ```
-6. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+import BrowserOnlyFormattedEditor from '@site/src/components/BrowserOnlyFormattedEditor';
 
-
+<BrowserOnlyFormattedEditor frontMatter={frontMatter}> </BrowserOnlyFormattedEditor>

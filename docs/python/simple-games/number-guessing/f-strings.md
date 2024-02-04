@@ -1,6 +1,49 @@
 ---
 sidebar_position: 8
 slug: /python/simple-games/number-guessing/understand-f-strings
+startingCode: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        try:
+          int(input("Guess a number between 1 and 100: "))
+        except ValueError:
+          print("Please enter a valid number.")
+      if guess < number_to_guess:
+          print("Too low!")
+      elif guess > number_to_guess:
+          print("Too high!")
+      else:
+
+  guess_number()
+answer: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        try:
+          int(input("Guess a number between 1 and 100: "))
+        except ValueError:
+          print("Please enter a valid number.")
+      if guess < number_to_guess:
+          print("Too low!")
+      elif guess > number_to_guess:
+          print("Too high!")
+      else:
+        print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
+
+  guess_number()
+filename: number-guessing.py
+language: Python
 ---
 
 # Understand F-Strings
@@ -33,32 +76,8 @@ print(result)  # Output: The sum of 5 and 10 is 15.
     ```python
     print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
     ```
-    The `number-guessing.py` file should look like this:
-    ```python
-    import random
+---
 
-    def guess_number():
-      number_to_guess = random.randint(1, 100)
-      guess = None
-      number_of_guesses = 0
-      while guess != number_to_guess:
-        while True:
-          try:
-            guess = int(input("Guess a number between 1 and 100: "))
-            if 1 <= guess <= 100:
-              break
-            else:
-              print("Your guess must be between 1 and 100.")
-          except ValueError:
-            print("Please enter a valid number.")
+import BrowserOnlyFormattedEditor from '@site/src/components/BrowserOnlyFormattedEditor';
 
-        if guess < number_to_guess:
-          print("Too low!")
-        elif guess > number_to_guess:
-          print("Too high!")
-        else:
-          print(f"Congratulations! You guessed it right in {number_of_guesses} guesses!")
-    
-    guess_number()
-    ```
-2. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+<BrowserOnlyFormattedEditor frontMatter={frontMatter}> </BrowserOnlyFormattedEditor>

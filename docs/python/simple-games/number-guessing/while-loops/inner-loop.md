@@ -1,9 +1,34 @@
 ---
 sidebar_position: 2
 slug: /python/simple-games/number-guessing/inner-loops
+startingCode: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+
+  guess_number()
+answer: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+
+  guess_number()
+filename: number-guessing.py
+language: Python
 ---
 
 # The Inner Loop
+
+import BrowserOnlyFormattedEditor from '@site/src/components/BrowserOnlyFormattedEditor';
 
 The inner loop is used to repeatedly ask the user for a valid number until they provide one that fits within the rules (1 to 100).
 
@@ -17,22 +42,11 @@ To understand how it works, imagine you're adding salt to a soup. You need to ta
 
 ## Hands-On Coding
 
-1. Place your cursor below the `while guess != number_to_guess:` line in the `guess_number` function.
-2. Write the `while True:` line to start the inner loop. Ensure you indent this line.
+1. Place your cursor below the `while guess != number_to_guess:` line in the `guess_number` function. Write the `while True:` line to start the inner loop. Ensure you indent this line.
     ```python
-    while guess != number_to_guess:
+    while True:
     ```
-      The `number-guessing.py` file should look like this:
-    ```python
-    import random
 
-    def guess_number():
-      number_to_guess = random.randint(1, 100)
-      guess = None
-      number_of_guesses = 0
-      while guess != number_to_guess:
-        while True:
+---
 
-    guess_number()
-    ```
-3. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+<BrowserOnlyFormattedEditor frontMatter={frontMatter}> </BrowserOnlyFormattedEditor>

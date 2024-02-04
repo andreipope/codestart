@@ -1,6 +1,43 @@
 ---
 sidebar_position: 1
 slug: /python/simple-games/number-guessing/if-statements/if-elif-else
+startingCode: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        try:
+          int(input("Guess a number between 1 and 100: "))
+        except ValueError:
+          print("Please enter a valid number.")
+
+  guess_number()
+answer: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        try:
+          int(input("Guess a number between 1 and 100: "))
+        except ValueError:
+          print("Please enter a valid number.")
+      if guess < number_to_guess:
+          print("Too low!")
+      elif guess > number_to_guess:
+          print("Too high!")
+      else:
+
+  guess_number()
+filename: number-guessing.py
+language: Python
 ---
 
 # If-Elif-Else
@@ -22,48 +59,30 @@ else:
 
 ## Hands-On Coding
 
-1. Place your cursor within the outer `while` loop, after the inner loop that validates the input.
-2. Write an `if` statement to check if `guess` is lower than `number_to_guess`:
+1. Place your cursor within the outer `while` loop, after the inner loop that validates the input. Write an `if` statement to check if `guess` is lower than `number_to_guess`:
     ```python
-    if guess < number_to_guess
+    if guess < number_to_guess:
     ```
-3. Indent the next line and call the `print` function passing it "Too low!" as a parameter to display a message for the scenario in which the number is too low:
+2. Indent the next line and call the `print` function passing it "Too low!" as a parameter to display a message for the scenario in which the number is too low:
     ```python
     print("Too low!")
     ```
-4. Write an `elif` statement to handle the case where the guess is greater than the number to guess:
+3. Write an `elif` statement to handle the case where the guess is greater than the number to guess:
     ```python
     elif guess > number_to_guess:
     ```
-5. Add an indented line that calling the `print` function` passing it "Too high!" as a parameter to display a message for the scenario in which the number is too high:
+4. Add an indented line that calling the `print` function` passing it "Too high!" as a parameter to display a message for the scenario in which the number is too high:
     ```python
     print("Too high!")
     ```
-    The `number-guessing.py` file should look like this:
+5. On the same level as the `if` and `elif` blocks, wite an `else` statement for handling the scenario in which the user guesses the number. Leave the body of the `else` block empty for now.
     ```python
-    print("Please enter a valid number.")
+    else:
     ```
-6. On the same level as the `if` and `elif` blocks, wite an `else` statement for handling the scenario in which the user guesses the number. Leave the body of the `else` block empty for now.
-    The `number-guessing.py` file should look like this:
-    ```python
-    import random
 
-    def guess_number():
-      number_to_guess = random.randint(1, 100)
-      guess = None
-      number_of_guesses = 0
-      while guess != number_to_guess:
-        while True:
-          try:
-            int(input("Guess a number between 1 and 100: "))
-          except ValueError:
-            print("Please enter a valid number.")
-        if guess < number_to_guess:
-            print("Too low!")
-        elif guess > number_to_guess:
-            print("Too high!")
-        else:
 
-    guess_number()
-    ```
-7. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+---
+
+import BrowserOnlyFormattedEditor from '@site/src/components/BrowserOnlyFormattedEditor';
+
+<BrowserOnlyFormattedEditor frontMatter={frontMatter}> </BrowserOnlyFormattedEditor>

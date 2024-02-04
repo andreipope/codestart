@@ -1,9 +1,23 @@
 ---
 sidebar_position: 3
 slug: /python/simple-games/number-guessing/random-module
+startingCode: |
+  def guess_number():
+
+  guess_number()
+answer: |
+  import random
+
+  def guess_number():
+
+  guess_number()
+filename: number-guessing.py
+language: Python
 ---
 
 # The random Module
+
+import BrowserOnlyFormattedEditor from '@site/src/components/BrowserOnlyFormattedEditor';
 
 The `random` module in Python is a built-in library that provides a suite of functions for generating random numbers and performing random operations. This module is part of the Python Standard Library, so it comes pre-installed with Python and does not require any additional installation.
 
@@ -43,18 +57,12 @@ Below are some of the commonly used functions in the `random` module:
 
 ## Hands-On Coding
 
-1. At the top of the `number-guessing.py` file, above the the `def guess_number():` line, import the `random` module by typing the following line at the top:
+1. At the top of the file, import the `random` module by typing the following line:
 
-    ```python copy
-    import random
-    ```
-    Your script should now look like this:
     ```python
     import random
-
-    def guess_number():
-      pass
-
-    guess_number()
     ```
-2. Save the file again after typing by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+
+---
+
+<BrowserOnlyFormattedEditor frontMatter={frontMatter}> </BrowserOnlyFormattedEditor>

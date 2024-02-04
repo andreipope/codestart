@@ -1,9 +1,37 @@
 ---
 sidebar_position: 5
 slug: /python/simple-games/number-guessing/casting
+startingCode: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        guess = input("Guess a number between 1 and 100: ")
+
+  guess_number()
+answer: |
+  import random
+
+  def guess_number():
+    number_to_guess = random.randint(1, 100)
+    guess = None
+    number_of_guesses = 0
+    while guess != number_to_guess:
+      while True:
+        guess = int(input("Guess a number between 1 and 100: "))
+
+  guess_number()
+filename: number-guessing.py
+language: Python
 ---
 
 # Casting
+
+import BrowserOnlyFormattedEditor from '@site/src/components/BrowserOnlyFormattedEditor';
 
 Casting in Python refers to converting a variable from one data type to another. This process is essential when the data type of a value needs to be changed to perform certain operations or meet the requirements of functions. Python provides built-in functions for casting, including `int()`, `float()`, and `str()`, among others.
 
@@ -44,25 +72,11 @@ print("Next year, you will be " + str(age + 1) + " years old.")
 
 ## Hands-On Coding
 
-1. Wrap the `input` function call within the `int()` function to convert the entered string into an integer.
+1. Wrap the `input` function call within the `int()` function to convert the entered string into an integer:
     ```python
     guess = int(input("Guess a number between 1 and 100: "))
     ```
-    The `number-guessing.py` file should look like this:
-    ```python
-      import random
 
-      def guess_number():
-        number_to_guess = random.randint(1, 100)
-        guess = None
-        number_of_guesses = 0
-        while guess != number_to_guess:
-          while True:
-            guess = int(input("Guess a number between 1 and 100: "))
+---
 
-      guess_number()
-    ```
-
-    guess_number()
-    ```
-3. Save your changes by pressing `Ctrl + S` (Windows) or `Cmd + S` (macOS).
+<BrowserOnlyFormattedEditor frontMatter={frontMatter}> </BrowserOnlyFormattedEditor>

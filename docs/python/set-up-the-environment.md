@@ -4,9 +4,9 @@ slug: /python/set-up-the-environment
 description: Install Python and the VS Code text editor.
 ---
 
-# Set Up the Environment
+# (Optional) Set Up the Environment
 
-This section will guide you through the installation of Python and the VS Code text editor on both Windows and Mac. Additionally, it will explain how to validate each installation.
+This section will guide you through installing Python and the VS Code text editor on both Windows and Mac. Additionally, it will explain how to validate each installation. Skip this lesson if you've already installed Python and a plain-text editor on your computer.
 
 ## Install Python
 
@@ -49,7 +49,7 @@ This section will guide you through the installation of Python and the VS Code t
 
 ## Install a Text Editor
 
-A text editor is essential for writing and managing your code. Visual Studio Code (VS Code) is a popular, free, and feature-rich editor.
+A text editor is essential for writing and managing your code. Visual Studio Code (VS Code) is a popular, free, and feature-rich editor. Note that you can also use a different text editor.
 
 
 ### Download VS Code
