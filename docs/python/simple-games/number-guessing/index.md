@@ -12,7 +12,7 @@ In the Number Guessing Game, the computer selects a random number between 1 and 
 
 ## Learning Outcomes
 
-Participants will achieve the following by completing this game:
+You will achieve the following by completing this game:
 
 1. **Understand basic Python syntax:** Learn how Python scripts are structured, including the use of functions, loops, and conditional statements.
 2. **Grasp core programming concepts:** Develop a foundational understanding of variables, user input, loop control, and feedback mechanisms.
