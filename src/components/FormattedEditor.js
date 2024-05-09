@@ -27,6 +27,7 @@ const FormattedEditor = (
     const [showTryAgain, setShowTryAgain] = useState(false)
     const [showModal, setShowModal] = useState(false)
     const [diffHeight, setDiffHeight] = useState('auto')
+    const [isPopupVisible, setPopupVisibility] = useState(false);
 
     const increaseDiffHeight = () => setDiffHeight('calc(50% - 40px)')
     const decreaseDiffHeight = () => setDiffHeight('auto')
@@ -46,6 +47,7 @@ const FormattedEditor = (
             console.log("It's a match.")
         } else {
             console.log("Answer doesn't match")
+            togglePopup()
             setShowAnswer(true)
             setShowHideAnswer(false)
             setShowHints(false)
@@ -55,6 +57,65 @@ const FormattedEditor = (
         }
     }, [])
 
+    const togglePopup = () => {
+      setPopupVisibility(!isPopupVisible);
+    };
+
+    function Popup({ message, onClose }) {
+      // Disable scrolling when the popup is open
+      React.useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => {
+          document.body.style.overflow = 'unset';
+        };
+      }, []);
+    
+      return (
+        <>
+          <div style={{
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black overlay
+            zIndex: 999 // Ensure it's below the popup but above other content
+          }} />
+          <div style={{
+            position: 'fixed', 
+            top: '50%', 
+            left: '50%', 
+            transform: 'translate(-50%, -50%)', 
+            backgroundColor: 'white', 
+            padding: '20px', 
+            zIndex: 1000,
+            border: '2px solid #ccc',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            borderRadius: '10px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center' // Center-align children (button)
+          }}>
+            <p>{message}</p>
+            <button onClick={onClose} style={{
+              marginTop: '20px',
+              padding: '10px 20px',
+              fontSize: '16px', // Larger font size
+              border: '1px solid #ccc',
+              borderRadius: '5px', // Rounded corners
+              backgroundColor: '#f9f9f9', // Light background color
+              boxShadow: '0 2px 5px rgba(0,0,0,0.2)', // Subtle shadow for 3D effect
+              cursor: 'pointer', // Cursor indicates clickable
+              outline: 'none' // Remove outline on focus (optional, for aesthetics)
+            }}>
+              OK
+            </button>
+          </div>
+        </>
+      );
+    }
+    
+    
     const handleWriteAnswer = useCallback((content) => {
         editorContentRef.current = content
     }, [])
@@ -77,6 +138,10 @@ const FormattedEditor = (
 
         <div className={`h-full  ${mode}`}>
             <div className="content-editor relative h-full" style={{ height, width: '100%' }}>
+            <div>
+      
+      {isPopupVisible && <Popup message="Your answer is not correct! Please review it before you continue to the next lesson." onClose={togglePopup} />}
+    </div>
                 <>
                     <div className="monacoEditor" style={{ height: 'calc(50% - 40px)' }}>
                       <p>Write the code in the editor below. When you've finished, select the <b>Check Answer</b> button.</p>
